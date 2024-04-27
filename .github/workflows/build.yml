@@ -60,6 +60,7 @@ jobs:
 
           if [[ "${{ matrix.runner }}" == "wasm32-unknown-unknown" ]]; then
             cp -r ./js ./dist
+            BIN_SUFFIX=".wasm"
           fi
  
           # The built binary output location
